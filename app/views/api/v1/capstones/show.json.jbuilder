@@ -1,6 +1,5 @@
-json.student_id @capstone.student_id 
-json.start_date @capstone.start_date
-json.end_date @capstone.end_date
-json.degree @capstone.degree
-json.university_name @capstone.university_name
-json.detail @capstone.detail
+json.studentId @capstone.student_id 
+json.name @capstone.name
+json.description @capstone.description
+json.url @capstone.url
+json.screenshot @capstone.screenshot
