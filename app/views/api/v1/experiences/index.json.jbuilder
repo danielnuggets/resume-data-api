@@ -4,5 +4,5 @@ json.array! @experiences.each do |experience|
   json.endDate experience.end_date
   json.jobTitle experience.job_title
   json.companyName experience.company_name
-  json.detail experience.detail
+  json.details experience.details
 end

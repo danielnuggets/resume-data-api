@@ -5,7 +5,7 @@ class Api::V1::EducationController < ApplicationController
   end
 
   def show
-    @education = Education.find(params[:student_id])
+    @education = Education.find(params[:id])
     render 'show.json.jbuilder'
   end
   def create
@@ -26,8 +26,8 @@ class Api::V1::EducationController < ApplicationController
       start_date: params[:start_date] || @education.start_date,
       end_date: params[:end_date] || @education.end_date,
       degree: params[:degree] || @education.degree,
-      university_name: params[:university_name] || @education.university_name
-      details: params[:details] || @education.details
+      university_name: params[:university_name] || @education.university_name,
+      details: params[:details] || @education.details,
       student_id: params[:student_id] || @education.student_id
       )
   end

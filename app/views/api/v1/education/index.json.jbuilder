@@ -4,5 +4,5 @@ json.array! @educations.each do |education|
   json.endDate education.end_date
   json.degree education.degree
   json.universityName education.university_name
-  json.detail education.detail
+  json.details education.details
 end

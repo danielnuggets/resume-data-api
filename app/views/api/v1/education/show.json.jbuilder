@@ -1,6 +1,6 @@
-json.studentId @experience.student_id 
-json.startDate @experience.start_date
-json.endDate @experience.end_date
-json.degree @experience.degree
-json.universityName @experience.university_name
-json.detail @experience.detail
+json.studentId @education.student_id 
+json.startDate @education.start_date
+json.endDate @education.end_date
+json.degree @education.degree
+json.universityName @education.university_name
+json.details @education.details
