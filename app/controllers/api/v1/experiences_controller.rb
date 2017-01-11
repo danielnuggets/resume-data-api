@@ -1,11 +1,11 @@
 class Api::V1::ExperiencesController < ApplicationController
     def index
-    @experiences = Beer.all
+    @experiences = Experience.all
     render 'index.json.jbuilder'
   end
 
   def show
-    @experience = Beer.find(params[:id])
+    @experience = Experience.find(params[:student_id])
     render 'show.json.jbuilder'
   end
   def create

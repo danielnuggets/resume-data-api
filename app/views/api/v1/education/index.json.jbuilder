@@ -1,8 +1,8 @@
-json.array! @experiences.each do |experience|
-  json.student_id experience.id 
-  json.start_date experience.start_date
-  json.end_date experience.end_date
-  json.degree experience.degree
-  json.university_name experience.university_name
-  json.detail experience.detail
+json.array! @educations.each do |education|
+  json.student_id education.student_id 
+  json.start_date education.start_date
+  json.end_date education.end_date
+  json.degree education.degree
+  json.university_name education.university_name
+  json.detail education.detail
 end
