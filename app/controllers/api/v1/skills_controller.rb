@@ -5,7 +5,7 @@ class Api::V1::SkillsController < ApplicationController
   end
 
   def show
-    @skill = Skill.find(params[:student_id])
+    @skill = Skill.find(params[:id])
     render 'show.json.jbuilder'
   end
   def create
