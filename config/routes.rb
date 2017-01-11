@@ -1,11 +1,12 @@
 Rails.application.routes.draw do
+
   namespace :api do
     namespace :v1 do
-      get '/resumes' => 'resumes#index'
-      get '/resumes/:id' => 'resumes#show'
-      post '/resumes' => 'resumes#create'
-      patch '/resumes/:id' => 'resumes#update'
-      delete '/resumes/:id' => 'resumes#destroy'
+      get '/students' => 'students#index'
+      get '/students/:id' => 'students#show'
+      post '/students' => 'students#create'
+      patch '/students/:id' => 'students#update'
+      delete '/students/:id' => 'students#destroy'
     end
   end
 end
