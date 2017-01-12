@@ -220,3 +220,59 @@ Skill.create(
   skill: "PostgreSQL",
   student_id: Student.find_by(first_name: "joel").id
 )
+# ******* Ray *********
+
+Student.create(
+  first_name: "Ray",
+  last_name: "Cheng",
+  email: "ray.cheng.y@gmail.com",
+  linkedin_url: "https://www.linkedin.com/in/raycheng00/",
+  twitter_handle: "https://twitter.com/koiBITs",
+  personal_website_url: "https://raychengy.github.io/",
+  online_resume_url: "https://www.linkedin.com/in/raycheng00/",
+  github_url: "https://github.com/raychengy/",
+  photo: "https://avatars1.githubusercontent.com/u/16471877?v=3&s=460",
+  phone_number: "917-815-8401",
+  bio: "An amature programmer & climber..."
+)
+
+Capstone.create(
+  name: "Climb On!",
+  description: "A Climbing Journal that trackers your climbing, training, and strength sessions.",
+  url: "http://google.com",
+  screenshot: "http://media.npr.org/assets/img/2015/12/16/reel-rock-film-tour-1_wide-5fa1511ec834e37693faa0a59881910e9075b88f-s900-c85.jpeg",
+  student_id: Student.find_by(first_name: "Ray").id
+)
+
+Education.create(
+  start_date: "2005",
+  end_date: "2011",
+  degree: "B.E. Electrical Engineering",
+  university_name: "the City College of New York, CUNY",
+  details: "",
+  student_id: Student.find_by(first_name: "Ray").id
+)
+
+Experience.create(
+  start_date: "2016",
+  end_date: "",
+  job_title: "Actualize  & Apprenticeship",
+  company_name: "",
+  details: "15-week full stack web development training
+Built a fully functional web app from scratch
+Completed daily coding exercises
+Worked in teams and learned to pair program
+Provided maintenance and service for non-profit organization web apps
+",
+  student_id: Student.find_by(first_name: "Ray").id
+)
+
+Skill.create(
+  skill: "Moderate knowledge of python programming language.",
+  student_id: Student.find_by(first_name: "Ray").id
+)
+
+Skill.create(
+  skill: "Moderate knowledge of Ruby programming ",
+  student_id: Student.find_by(first_name: "Ray").id
+)
