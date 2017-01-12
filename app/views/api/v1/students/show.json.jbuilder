@@ -4,8 +4,8 @@
   json.email @student.email
   json.linkedinUrl @student.linkedin_url
   json.twitterHandle @student.twitter_handle
-  json.personalWebsite_url @student.personal_website_url
-  json.onlineResume_url @student.online_resume_url
+  json.personalWebsiteUrl @student.personal_website_url
+  json.onlineResumeUrl @student.online_resume_url
   json.githubUrl @student.github_url
   json.photo @student.photo
   json.phoneNumber @student.phone_number
@@ -22,7 +22,7 @@
     json.startDate education.start_date
     json.endDate education.end_date
     json.degree education.degree
-    json.company_name education.university_name
+    json.companyName education.university_name
     json.details education.details
   end
 

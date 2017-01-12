@@ -1,5 +1,5 @@
 class Api::V1::EducationController < ApplicationController
-   def index
+  def index
     @educations = Education.all
     render 'index.json.jbuilder'
   end
@@ -17,7 +17,7 @@ class Api::V1::EducationController < ApplicationController
       details: params[:details],
       student_id: params[:student_id]
       )
-     render 'show.json.jbuilder'
+    render 'show.json.jbuilder'
   end
 
   def update
