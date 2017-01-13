@@ -407,3 +407,60 @@ Skill.create(
   skill: "Git",
   student_id: Student.find_by(first_name: "David").id
 )
+
+# ******* Yvonne *********
+Student.create(
+  first_name: "Yvonne",
+  last_name: "Ike",
+  email: "dev@yvonneike.com",
+  linkedin_url: "linkedin.com/in/yvonneike",
+  twitter_handle: "",
+  personal_website_url: "",
+  online_resume_url: "",
+  github_url: "github.com/yviedev",
+  photo: "",
+  phone_number: "347-948-9559",
+  bio: ""
+)
+Capstone.create(
+  name: "My Family Tree",
+  description: "My Family Tree is a web application written in Rails that allows its users to join a family group for the purpose of being able to add family members and/or communicate with other family members. The important features of this app  include adding family members and details, a family newsfeed which includes status updates of participating family members, family members images, messages and geo-locations. There is a visual representation of each family member on a “family tree” and a Google Maps gem to show each family member's geo-location on a map. I chose to build this app because I have a large extended family and thought this would be a fun way to allow technology to act as a historian and allow users keep in touch with family in a more private and secure setting.",
+  url: "",
+  screenshot: "",
+  student_id: Student.find_by(first_name: "Yvonne").id
+)
+Education.create(
+  start_date: "1999",
+  end_date: "2003",
+  degree: "BA",
+  university_name: "Cornell",
+  details: "",
+  student_id: Student.find_by(first_name: "Yvonne").id
+)
+Experience.create(
+  start_date: "2016",
+  end_date: "",
+  job_title: "Actualize  & Apprenticeship",
+  company_name: "",
+  details: "15-week training in full-stack web development with a focus on Ruby on Rails and Javascript
+Learned object-oriented programming and working as a team
+Sharpened coding skills via daily projects and exercises
+Built a fully functional web app, YoUrban, from scratch",
+  student_id: Student.find_by(first_name: "Yvonne").id
+)
+Skill.create(
+  skill: "JavaScript",
+  student_id: Student.find_by(first_name: "Yvonne").id
+)
+Skill.create(
+  skill: "Ruby",
+  student_id: Student.find_by(first_name: "Yvonne").id
+)
+Skill.create(
+  skill: "Rails",
+  student_id: Student.find_by(first_name: "Yvonne").id
+)
+Skill.create(
+  skill: "HTML",
+  student_id: Student.find_by(first_name: "Yvonne").id
+)
