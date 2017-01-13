@@ -1,4 +1,5 @@
-# Before running rake db:seed, please run: rake db:reset db:migrate
+# Please run: rails db:drop && rails db:create && rails db:migrate && rails db:seed
+
 
 # ******* Jigmey *********
 
