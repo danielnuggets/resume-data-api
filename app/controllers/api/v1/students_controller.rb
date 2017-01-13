@@ -31,6 +31,7 @@ class Api::V1::StudentsController < ApplicationController
   end
 
   def update
+    @student = Student.find(params[:id])
     @student.first_name = params[:first_name] || student.first_name
     @student.last_name = params[:last_name] || student.last_name
     @student.email = params[:email] || student.email
