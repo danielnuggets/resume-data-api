@@ -1,3 +1,5 @@
+# Before running rake db:seed, please run: rake db:reset db:migrate
+
 # ******* Jigmey *********
 
 Student.create(
@@ -128,6 +130,7 @@ Skill.create(
   student_id: Student.find_by(first_name: "Matthew").id
 )
 
+
 #Joel Matos 
 Student.create(
   first_name: "Joel",
@@ -220,6 +223,8 @@ Skill.create(
   skill: "PostgreSQL",
   student_id: Student.find_by(first_name: "joel").id
 )
+
+
 # ******* Ray *********
 
 Student.create(
@@ -276,6 +281,7 @@ Skill.create(
   skill: "Moderate knowledge of Ruby programming ",
   student_id: Student.find_by(first_name: "Ray").id
 )
+
 
 # ******* Dan *********
 
