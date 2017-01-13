@@ -42,8 +42,11 @@ class Api::V1::StudentsController < ApplicationController
     @student.photo = params[:photo] || student.photo
     @student.phone_number = params[:phone_number] || student.phone_number
     @student.bio = params[:bio]
-    @student.save
-    render 'show.json.jbuilder'
+    if @student.save
+      render 'show.json.jbuilder'
+    else
+      render json: {errors: @student.errors.full_messages}, status: 422
+    end
   end
 
   def destroy
