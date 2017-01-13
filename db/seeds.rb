@@ -82,7 +82,8 @@ Student.create(
 
 Capstone.create(
   name: "Perform2nite",
-  description: "",
+  description: "Imagine a world where both Performers and  Entertainment Venues can get hitched in a matter of just a click. At Perform2Night, we are making it easier to connect both of them by allowing Venues to post available upcoming events and  having Performers submit their demos to these events. Our goal is to make it effortless for both parties; the annoyance of listening to each demo that gets mailed in has be resolved by a click of a button. The annoyance of having your manager send demos everywhere possible and not having a gig that upcoming weekend has been resolved by a click of a button. By the click of a button we have renovated how the Entertainment industry will book all future events!
+    This app will include Ruby, Rails, Javascript, AngularJS, HTML, and CSS.",
   url: "",
   screenshot: "",
   student_id: Student.find_by(first_name: "Matthew").id
