@@ -16,7 +16,7 @@ class Api::V1::SkillsController < ApplicationController
      if @skill.save
      render 'show.json.jbuilder'
     else
-    render json: {errors: @skill.errors.full_messages}, status:422
+      render json: {errors: @skill.errors.full_messages}, status:422
     end
   end
 

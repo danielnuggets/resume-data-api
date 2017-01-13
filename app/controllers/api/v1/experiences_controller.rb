@@ -20,7 +20,7 @@ class Api::V1::ExperiencesController < ApplicationController
      if @experience.save
      render 'show.json.jbuilder'
     else
-    render json: {errors: @experience.errors.full_messages}, status:422
+      render json: {errors: @experience.errors.full_messages}, status:422
     end
   end
 

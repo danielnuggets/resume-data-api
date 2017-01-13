@@ -15,10 +15,11 @@ class Api::V1::CapstonesController < ApplicationController
       url: params[:url],
       screenshot: params[:screenshot],
       student_id: params[:student_id]
-      )if @capstone.save
+      )
+    if @capstone.save
      render 'show.json.jbuilder'
     else
-    render json: {errors: @capstone.errors.full_messages}, status:422
+      render json: {errors: @capstone.errors.full_messages}, status:422
     end
   end
 

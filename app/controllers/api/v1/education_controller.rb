@@ -20,7 +20,7 @@ class Api::V1::EducationController < ApplicationController
     if @education.save
      render 'show.json.jbuilder'
     else
-    render json: {errors: @education.errors.full_messages}, status:422
+      render json: {errors: @education.errors.full_messages}, status:422
     end
   end
 
