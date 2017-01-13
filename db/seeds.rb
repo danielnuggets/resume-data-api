@@ -176,52 +176,52 @@ Plan, prepare, and execute promotional events to ensure round the year traffic
 Analyze market trends and competitor strategies for taking evasive steps
 To meet vendors and clients for signing deals
 ",
-  student_id: Student.find_by(first_name: "joel").id
+  student_id: Student.find_by(first_name: "Joel").id
 )
 
 Skill.create(
   skill: "JavaScript",
-  student_id: Student.find_by(first_name: "joel").id
+  student_id: Student.find_by(first_name: "Joel").id
 )
 
 Skill.create(
   skill: "Ruby",
-  student_id: Student.find_by(first_name: "joel").id
+  student_id: Student.find_by(first_name: "Joel").id
 )
 
 Skill.create(
   skill: "Rails",
-  student_id: Student.find_by(first_name: "joel").id
+  student_id: Student.find_by(first_name: "Joel").id
 )
 
 Skill.create(
   skill: "Html",
-  student_id: Student.find_by(first_name: "joel").id
+  student_id: Student.find_by(first_name: "Joel").id
 )
 
 Skill.create(
   skill: "CSS",
-  student_id: Student.find_by(first_name: "joel").id
+  student_id: Student.find_by(first_name: "Joel").id
 )
 
 Skill.create(
   skill: "Git",
-  student_id: Student.find_by(first_name: "joel").id
+  student_id: Student.find_by(first_name: "Joel").id
 )
 
 Skill.create(
   skill: "AngularJS",
-  student_id: Student.find_by(first_name: "joel").id
+  student_id: Student.find_by(first_name: "Joel").id
 )
 
 Skill.create(
   skill: "SQL",
-  student_id: Student.find_by(first_name: "joel").id
+  student_id: Student.find_by(first_name: "Joel").id
 )
 
 Skill.create(
   skill: "PostgreSQL",
-  student_id: Student.find_by(first_name: "joel").id
+  student_id: Student.find_by(first_name: "Joel").id
 )
 
 
