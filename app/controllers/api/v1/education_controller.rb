@@ -17,7 +17,11 @@ class Api::V1::EducationController < ApplicationController
       details: params[:details],
       student_id: params[:student_id]
       )
-    render 'show.json.jbuilder'
+    if @education.save
+     render 'show.json.jbuilder'
+    else
+      render json: {errors: @education.errors.full_messages}, status:422
+    end
   end
 
   def update

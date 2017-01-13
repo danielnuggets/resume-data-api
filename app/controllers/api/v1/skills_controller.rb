@@ -13,7 +13,11 @@ class Api::V1::SkillsController < ApplicationController
       skill: params[:skill],
       student_id: params[:student_id]
       )
+     if @skill.save
      render 'show.json.jbuilder'
+    else
+      render json: {errors: @skill.errors.full_messages}, status:422
+    end
   end
 
   def update
