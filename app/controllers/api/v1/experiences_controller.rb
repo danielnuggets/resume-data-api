@@ -17,7 +17,11 @@ class Api::V1::ExperiencesController < ApplicationController
       details: params[:details],
       student_id: params[:student_id]
       )
+     if @experience.save
      render 'show.json.jbuilder'
+    else
+    render json: {errors: @experience.errors.full_messages}, status:422
+    end
   end
 
   def update

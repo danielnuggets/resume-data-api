@@ -9,14 +9,17 @@ class Api::V1::CapstonesController < ApplicationController
     render 'show.json.jbuilder'
   end
   def create
-    @capstone = Capstone.create(
+    @capstone = Capstone.new(
       name: params[:name],
       description: params[:description],
       url: params[:url],
       screenshot: params[:screenshot],
       student_id: params[:student_id]
-      )
+      )if @capstone.save
      render 'show.json.jbuilder'
+    else
+    render json: {errors: @capstone.errors.full_messages}, status:422
+    end
   end
 
   def update
